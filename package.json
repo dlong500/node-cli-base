@@ -6,7 +6,7 @@
   "main": "entry.js",
   "repository": "git@github.com:dlong500/node-cli-base.git",
   "author": "Davison Long <dlong@nextgentech.net>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist/*",
     "start": "cross-env NODE_ENV=development node entry.js",
