@@ -1,0 +1,41 @@
+{
+  "name": "node-cli-base",
+  "version": "0.0.1",
+  "description": "Boilerplate Node CLI app",
+  "private": false,
+  "main": "entry.js",
+  "repository": "git@github.com:dlong500/node-cli-base.git",
+  "author": "Davison Long <dlong@nextgentech.net>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "start": "cross-env NODE_ENV=development node entry.js",
+    "cliapp": "cross-env NODE_ENV=production node entry.js",
+    "build": "yarn run clean && babel src --out-dir ./dist"
+  },
+  "bin": {
+    "cliapp": "entry.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "cross-env": "^7.0.2",
+    "del": "^4.1.1",
+    "slash": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-async-generator-functions": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.3.1",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
