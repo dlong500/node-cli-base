@@ -16,15 +16,27 @@
   "bin": {
     "cliapp": "entry.js"
   },
+  "engines": {
+    "node": ">=15"
+  },
   "dependencies": {
     "@babel/core": "^7.0.0",
     "cross-env": "^7.0.2",
-    "del": "^4.1.1",
+    "del": "^6.0.0",
+    "fast-glob": "^3.2.5",
+    "glob-parent": "^5.1.1",
+    "is-glob": "^4.0.1",
+    "picomatch": "^2.2.3",
+    "pino": "^6.11.3",
+    "pino-multi-stream": "^5.2.0",
+    "pino-pretty": "^4.5.0",
+    "pino-tee": "^0.3.0",
     "slash": "^3.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/eslint-parser": "^7.13.8",
     "@babel/plugin-proposal-async-generator-functions": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
@@ -34,8 +46,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.3.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^7.3.1",
+    "eslint": "^7.24.0",
     "eslint-plugin-import": "^2.8.0"
   }
 }

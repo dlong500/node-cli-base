@@ -1,12 +1,11 @@
 module.exports = {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "env": {
-      "commonjs": true,
       "node": true,
-      "es6": true
+      "es2021": true,
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    // "ecmaVersion": 12, // set automatically by es2021 env
     "sourceType": "module",
   },
   "extends": [ "eslint:recommended", "plugin:import/errors" ],
